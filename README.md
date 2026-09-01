@@ -10,13 +10,13 @@ A computer vision toolkit designed for automated macroscopic traffic data extrac
 
 ## Scripts Overview
 
-### 1. `Vehicle Composition.py`
+### 1. `extract_vehicle_composition.py`
 Tracks and counts vehicles crossing predefined intersection lines. It features custom logic to classify Light Commercial Vehicles (LCVs) based on pixel area thresholds, dynamically redefining small trucks and large cars as LCVs upon crossing the designated lanes.
 
-### 2. `Free Flow Speed.py`
+### 2. `extract_flow_metrics.py`
 Designed strictly for flow metric analysis, explicitly bypassing individual vehicle classification to optimize for raw volume and speed extraction. It establishes a 50m virtual speed trap to extract spot speed (km/h), time headway (s), and space headway (m).
 
-### 3. `Space_and_Time_Headway.py`
+### 3. `extract_comprehensive_states.py`
 A comprehensive extraction tool that combines the 50m speed trap methodology with vehicle classification and LCV bounding-box area evaluation. It provides a detailed dataset containing localized speed, headways, flow states, and vehicle class for deep-dive traffic flow analysis.
 
 ## Prerequisites & Installation
